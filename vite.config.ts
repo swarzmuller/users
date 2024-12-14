@@ -7,13 +7,4 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
-  server: {
-    proxy: {
-      "/users": {
-        target: "https://jsonplaceholder.typicode.com/users",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/users/, "/users"),
-      },
-    },
-  },
 });

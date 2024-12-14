@@ -1,8 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
+import { CurrentUser, Users } from "@/components";
 
 export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <div>1</div>
-    }
-  ]);
+  {
+    path: "/",
+    element: <Users />,
+    children: [],
+  },
+  {
+    path: "/users/:id",
+    element: <CurrentUser />,
+  },
+]);

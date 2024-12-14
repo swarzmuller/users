@@ -25,6 +25,11 @@ injectGlobal`
     padding: 0;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   h1,
   h2,
   h3,
