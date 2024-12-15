@@ -5,17 +5,17 @@ export interface DataProps {
   email: string;
   phone: string;
   website: string;
-  address?: {
-    city?: string;
-    geo?: { lat?: string; lng?: string };
-    street?: string;
-    suite?: string;
-    zipcode?: string;
+  address: {
+    city: string;
+    geo: { lat: string; lng: string };
+    street: string;
+    suite: string;
+    zipcode: string;
   };
-  company?: {
-    bs?: string;
-    catchPhrase?: string;
-    name?: string;
+  company: {
+    bs: string;
+    catchPhrase: string;
+    name: string;
   };
 }
 
